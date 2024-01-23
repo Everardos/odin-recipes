@@ -1,18 +1,67 @@
+:root {
+    --linktext: #88c0d0;
+    --background1: #2e3440;
+    --background2: #3b4252;
+    --background3: #4c566a;
+    --text: #e5e9f0;
+
+}
+
+html {
+    background-color: var(--background3);
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #3b4252;
-    color: #e5e9f0;
+    color: var(--text);
+    width: 600px;
+    margin: 0px auto;
 }
 
-p {
+.title {
+    font-size: 24px;
+    background-color: var(--background2);
+    padding: 8px;
+    text-align: center;
+    margin: 0 8;
+}
+
+.content {
+    background-color: var(--background1);
     font-size: 14px;
+    padding: 8px;
 }
 
-ul,
-ol {
-    background-color:#2e3440;
+.content h2 {
+    font-size: 18px;
 }
 
-ul a {
-    color: #88c0d0
+.links ul,
+.links li {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.links li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px;
+}
+
+.links img {
+    width: 150px;
+    height: auto;
+}
+
+.links a {
+    color: var(--linktext);
+    display: block;
+}
+
+.centered {
+    text-align: center;
+    margin: 0px auto;
 }
